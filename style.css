@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-style: normal;
-    line-height: normal;
-    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
     padding: 0;
 }
 
@@ -252,6 +255,8 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .nav-list {
@@ -260,11 +265,11 @@ footer {
     }
 
     .nav-list-item-link {
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 0;
     }
 
-    /* Добавьте другие стили для мобильных устройств */
+    /* Другие стили для мобильных устройств */
 }
 
 /* Для планшетов и маленьких ноутбуков */
@@ -274,5 +279,19 @@ footer {
 
 /* Для больших ноутбуков и ПК */
 @media (min-width: 1025px) {
-    /* Добавьте стили для ПК */
+    .container {
+        width: 1032px;
+        margin: 0 auto;
+    }
+
+    .nav-list {
+        margin-left: 92px;
+    }
+
+    .nav-list-item-link {
+        font-size: 20px;
+        margin-left: 55px;
+    }
+
+    /* Другие стили для ПК */
 }
