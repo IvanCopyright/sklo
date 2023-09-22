@@ -249,49 +249,4 @@ footer {
     
 }
 
-/* Добавьте медиа-запросы для разных разрешений экрана */
 
-/* Для мобильных устройств */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .nav-list {
-        margin-left: 0;
-        justify-content: center;
-    }
-
-    .nav-list-item-link {
-        font-size: 18px;
-        margin-left: 0;
-    }
-
-    /* Другие стили для мобильных устройств */
-}
-
-/* Для планшетов и маленьких ноутбуков */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Добавьте стили для планшетов */
-}
-
-/* Для больших ноутбуков и ПК */
-@media (min-width: 1025px) {
-    .container {
-        width: 1032px;
-        margin: 0 auto;
-    }
-
-    .nav-list {
-        margin-left: 92px;
-    }
-
-    .nav-list-item-link {
-        font-size: 20px;
-        margin-left: 55px;
-    }
-
-    /* Другие стили для ПК */
-}
