@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKLOHub - Порізка скла у Харкові</title>
+    <link rel="icon" href="./images/window-favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/window-favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var aboutUsLink = document.querySelector('nav a[href="#about-us"]');
+            var contactsLink = document.querySelector('nav a[href="#contacts"]');
+            var locationLink = document.querySelector('nav a[href="#location"]');
+
+            function scrollToSection(sectionId) {
+                var targetSection = document.querySelector(sectionId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+            if (aboutUsLink) {
+                aboutUsLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    scrollToSection('#about-us');
+                });
+            }
+
+            if (contactsLink) {
+                contactsLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    scrollToSection('#contacts');
+                });
+            }
+
+            if (locationLink) {
+                locationLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    scrollToSection('#location');
+                });
+            }
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-position">
+            <a href="/" class="logo-header-link"><span style="color: #2196f3; font-size: 50px;">SKLO</span><span
+                    style="color: yellow; font-size: 35px;">Hub</span></a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="#about-us" class="nav-list-item-link">Про нас</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#contacts" class="nav-list-item-link">Контакти</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#location" class="nav-list-item-link">Де ми знаходимось</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!-- Main section -->
+    <section id="about-us">
+        <div class="container">
+            <h1 class="heading">Про нас</h1>
+            <h2 class="sub-heading">Компанія <span style="color: #2196f3;">SKLO</span><span
+                    style="color: yellow;">Hub</span> - ваш надійний партнер у світі скла в Харкові. Ми спеціалізуємося
+                на продажу високоякісного скла з індивідуальним різанням за вашими розмірами. Наш досвід і
+                професіоналізм гарантують, що кожну деталь, яку ви замовляєте, буде ідеально відповідати вашим потребам.
+                Незалежно від того, чи потрібне вам скло для вікон, дверей, меблів або декору, ми надамо вам найкращі
+                рішення. <br><br><span style="color: #2196f3;">SKLO</span><span style="color: yellow;">Hub</span> - це
+                якість, надійність і індивідуальний підхід до кожного клієнта. Передайте нам свої вимоги, і ми з радістю
+                допоможемо вам реалізувати в життя ваші проекти зі скла.</h2>
+        </div>
+    </section>
+
+
+    <!-- Contacts-section -->
+    <section id="contacts">
+        <div class="container">
+            <h2 class="contacts-heading">Наші контакти</h2>
+            <ul class="contacts-list">
+                <li class="contacts-list-item">
+                    <img src="./images/phone-icon.png" alt="іконка мобільного телефону" class="contact-icon-item">
+                    <a href="tel:+380961501785" class="contact-phone">+38 096 150 17 85</a>
+                </li>
+                <li class="contacts-list-item">
+                    <img src="./images/phone-icon.png" alt="іконка мобільного телефону" class="contact-icon-item">
+                    <a href="tel:+380664623587" class="contact-phone">+38 066 462 35 87</a>
+                </li>
+                <li class="contacts-list-item">
+                    <img src="./images/Telegram_logo.svg.png" alt="іконка мобільного телефону"
+                        class="contact-icon-item">
+                    <p class="app-contact">ILLIA_SKLO</p>
+                </li>
+                <li class="contacts-list-item">
+                    <img src="./images/viber-icon.png" alt="іконка мобільного телефону" class="contact-icon-item">
+                    <p class="app-contact">+38 096 150 17 85</p>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- Store-section -->
+    <section class="store-section">
+        <div class="container">
+            <h3 class="cards-title">Ціни на наш товар</h3>
+            <ul class="card-set">
+
+                <li class="card-item">
+                    <div class="card-content">
+                        <p class="card-word">Матоване скло з декором 4мм </p>
+                        <img src="./images/mat-s-dekorom.jpg" alt="Матоване стекло з декором" class="card-image">
+                        <p class="card-word-translate">Ціна: 1000грн м<sup>2</sup></p>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card-content">
+                        <p class="card-word">Дзеркало 4мм</p>
+                        <img src="./images/zerkalo.jpg" alt="Дзеркало" class="card-image">
+                        <p class="card-word-translate">Ціна: 950грн м<sup>2</sup></p>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card-content">
+                        <p class="card-word">Скло 3мм / 4мм</p>
+                        <img src="./images/steklo.jpg" alt="Скло" class="card-image">
+                        <p class="card-word-translate">Ціна: 620/650 грн м<sup>2</sup></p>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card-content">
+                        <p class="card-word">Бронз</p>
+                        <img src="./images/uzor-zheltoe.jpg" alt="Thank you" class="card-image">
+                        <p class="card-word-translate">Ціна: 1000грн м<sup>2</sup></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="location">
+        <div class="container">
+            <h2 class="heading">Де ми знаходимось</h2>
+            <div class="loc">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d533.7636821397804!2d36.39700293089585!3d49.94459343409258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDU2JzQwLjQiTiAzNsKwMjMnNDkuNiJF!5e1!3m2!1sru!2sua!4v1695409833026!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>            
+            <p class="address">Харків, Індустріальний район, проспект Героїв Харкова, 274</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-position">
+            <a href="/" class="logo-header-link"><span style="color: #2196f3; font-size: 50px;">SKLO</span><span
+                style="color: yellow; font-size: 35px;">Hub</span></a>
+            <p>&copy;2023-2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
