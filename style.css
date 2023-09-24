@@ -251,12 +251,12 @@ footer {
 }
 
 
-.adaptive {
+/* .adaptive {
     width: 1200px;
     height: 100%;
     margin: auto;
     display: grid;
-}
+} */
 @media (max-width: 1200px) {
     .adaptive {
         width: 1000px;
@@ -275,8 +275,8 @@ footer {
     }
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .adaptive {
         width: 100%;
     }
-} */
+}
