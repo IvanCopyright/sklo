@@ -33,10 +33,11 @@ ul {
 }
 
 .container {
-    width: 1032px;
-    margin: 0 auto;
+    max-width: 100%;
     padding-left: 12px;
     padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -252,7 +253,7 @@ footer {
 
 
 .adaptive {
-    /* width: 1200px; */
+    width: 1200px;
     height: 100%;
     margin: auto;
     display: grid;
