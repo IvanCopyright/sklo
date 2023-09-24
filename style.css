@@ -54,6 +54,7 @@ header {
     margin-left: 92px;
 }
 
+
 .logo-header-link {
     font-family: "Montserrat";
     font-style: normal;
@@ -274,8 +275,8 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .adaptive {
         width: 100%;
     }
-}
+} */
