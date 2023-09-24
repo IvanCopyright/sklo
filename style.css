@@ -255,7 +255,7 @@ footer {
     width: 1200px;
     height: 100%;
     margin: auto;
-    /* display: grid; */
+    display: grid;
 }
 @media (max-width: 1200px) {
     .adaptive {
