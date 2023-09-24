@@ -252,7 +252,7 @@ footer {
 
 
 .adaptive {
-    width: 1200px;
+    /* width: 1200px; */
     height: 100%;
     margin: auto;
     display: grid;
