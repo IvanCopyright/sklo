@@ -101,7 +101,9 @@ header {
 }
 
 #location {
-    background-color: #2F303A;
+    background-image: linear-gradient(rgba(10, 114, 211, 0.8), rgba(173, 188, 9, 0.8)), url("./images/kharkov.jpg");
+    background-size: cover;
+    background-position: center;
     height: 650px;
     margin-top: 108.5px;
 
